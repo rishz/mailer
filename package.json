@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rishz/mailer#readme",
   "dependencies": {
+    "@types/nodemailer": "^3.1.0",
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.8",
@@ -26,6 +27,7 @@
     "express": "^4.15.3",
     "method-override": "^2.3.9",
     "morgan": "^1.8.2",
+    "nodemailer": "^4.0.1",
     "pug": "^2.0.0-rc.2"
   },
   "devDependencies": {

@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b482d5f-416f-4341-92dc-fcf30c51db71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tscache/app/timestamp" />
+    <list default="true" id="1b482d5f-416f-4341-92dc-fcf30c51db71" name="Default" comment="Set up serv">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/acorn-globals/node_modules/acorn/dist/.keep" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/.keep" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/livereload-js/lib/.keepme" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/pug-lexer/node_modules/acorn/dist/.keep" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-lr/tmp/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tscache/app/hashes/server.ts-916156c481141bfcd08c6ae40ce10e00" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/www" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntfile.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cake" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cleancss" />
@@ -6213,18 +6207,17 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/yargs/node_modules/camelcase/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/yargs/node_modules/camelcase/readme.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/yargs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/route.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/index.pug" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mailer/AbstractMailer.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mailer/Mailer.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mailer/MailerHelper.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/RequiredParam.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tslint.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/index.js" afterPath="$PROJECT_DIR$/src/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/index.ts" afterPath="$PROJECT_DIR$/src/routes/index.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -6242,36 +6235,67 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gruntfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gruntfile.js">
+      <file leaf-file-name="server.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <marker date="1500716966000" expanded="true" signature="525:752" ph="{&quot;body-parser&quot;: &quot;^1.17.2&quot;...}" />
-                <marker date="1500716966000" expanded="true" signature="775:1148" ph="{&quot;@types/body-parser&quot;: &quot;^1.16.4&quot;...}" />
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server.ts">
+      <file leaf-file-name="tslint.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tslint.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mailer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mailer/Mailer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailerHelper.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mailer/MailerHelper.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractMailer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mailer/AbstractMailer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding>
+                <element signature="n#!!doc;n#AbstractMailer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -6287,11 +6311,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="e#49#113#0" expanded="true" />
               </folding>
@@ -6299,21 +6323,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes/index.js">
+      <file leaf-file-name="RequiredParam.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/RequiredParam.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="135">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -6324,6 +6338,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -6340,9 +6355,16 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/routes/route.ts" />
         <option value="$PROJECT_DIR$/src/routes/indexRoute.ts" />
-        <option value="$PROJECT_DIR$/src/routes/index.ts" />
-        <option value="$PROJECT_DIR$/src/server.ts" />
         <option value="$PROJECT_DIR$/views/index.pug" />
+        <option value="$PROJECT_DIR$/tslint.json" />
+        <option value="$PROJECT_DIR$/src/mailer/Mailer.ts" />
+        <option value="$PROJECT_DIR$/src/mailer/MailerHelper.ts" />
+        <option value="$PROJECT_DIR$/src/server.ts" />
+        <option value="$PROJECT_DIR$/src/routes/RequiredParam.ts" />
+        <option value="$PROJECT_DIR$/src/mailer/AbstractMailer.ts" />
+        <option value="$PROJECT_DIR$/src/mailer/SparkMailer.js" />
+        <option value="$PROJECT_DIR$/src/mailer/SparkMailer.ts" />
+        <option value="$PROJECT_DIR$/src/routes/index.ts" />
       </list>
     </option>
   </component>
@@ -6401,6 +6423,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -6498,15 +6570,23 @@
       <option name="presentableId" value="Default" />
       <updated>1500706766707</updated>
       <workItem from="1500706830983" duration="21000" />
-      <workItem from="1500708591468" duration="5835000" />
+      <workItem from="1500708591468" duration="9438000" />
     </task>
+    <task id="LOCAL-00001" summary="Set up serv">
+      <created>1500717470608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1500717470608</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5856000" />
+    <option name="totallyTimeSpent" value="9459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -6535,11 +6615,19 @@
         <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/src/routes/route.js" />
         <option value="$PROJECT_DIR$/src/routes/index.js" />
+        <option value="$PROJECT_DIR$/src/mailer/Mailer.js" />
+        <option value="$PROJECT_DIR$/src/mailer/MailerHelper.js" />
+        <option value="$PROJECT_DIR$/src/mailer/AbstractMailer.js" />
+        <option value="$PROJECT_DIR$/src/routes/RequiredParam.js" />
       </list>
     </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up serv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up serv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -6599,8 +6687,8 @@
         <state relative-caret-position="0">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
-            <marker date="1500716966000" expanded="true" signature="525:752" ph="{&quot;body-parser&quot;: &quot;^1.17.2&quot;...}" />
-            <marker date="1500716966000" expanded="true" signature="775:1148" ph="{&quot;@types/body-parser&quot;: &quot;^1.16.4&quot;...}" />
+            <marker date="1500724690000" expanded="true" signature="525:815" ph="{&quot;body-parser&quot;: &quot;^1.17.2&quot;...}" />
+            <marker date="1500724690000" expanded="true" signature="838:1211" ph="{&quot;@types/body-parser&quot;: &quot;^1.16.4&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -6625,7 +6713,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-126">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1500723755000" expanded="true" signature="1351:1359" ph="{...}" />
+            <marker date="1500723755000" expanded="true" signature="1351:1693" ph="{...}" />
+            <marker date="1500723755000" expanded="true" signature="1420:1667" ph="{...}" />
+            <marker date="1500723755000" expanded="true" signature="1531:1585" ph="{&quot;message&quot;: &quot;Welcome to Mailer&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -6645,22 +6738,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/index.ts">
+    <entry file="file://$PROJECT_DIR$/src/routes/RequiredParam.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#49#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mailer/Mailer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mailer/SparkMailer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mailer/AbstractMailer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc;n#AbstractMailer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mailer/MailerHelper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mailer/SparkMailer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="e#49#113#0" expanded="true" />
           </folding>
         </state>
       </provider>

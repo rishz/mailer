@@ -3,6 +3,7 @@
  */
 import {NextFunction, Request, Response, Router} from "express";
 import {BaseRoute} from "./route";
+import * as NodeMailer from "nodemailer";
 
 export class IndexRoute extends BaseRoute{
 
@@ -12,6 +13,16 @@ export class IndexRoute extends BaseRoute{
 
         router.get('/', (req: Request, res: Response, next: NextFunction) => {
             new IndexRoute().index(req, res, next);
+        });
+
+        router.post('/mail', (req: Request, res:Response)=>{
+            let transporter = NodeMailer.createTransport({
+                service: 'Gmail',
+                auth: {
+                    user: 'example@gmail.com', // Your email id
+                    pass: 'password' // Your password
+                }
+            });
         })
     }
 
